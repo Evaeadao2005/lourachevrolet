@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #24292f, #3a3f44, #5a5f64);
-    color: white;
+    background-color: #ffffff;
+    color: #333333;
     line-height: 1.6;
 }
 
@@ -18,14 +18,17 @@ body {
 }
 
 header {
-    background-color: #1e2328;
-    color: white;
+    background-color: #ffffff;
+    color: #333333;
     padding: 20px 0;
     text-align: center;
+    border-bottom: 2px solid #d4af37;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     font-size: 36px;
+    color: #d4af37;
 }
 
 nav ul {
@@ -37,47 +40,56 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: #333333;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4af37;
 }
 
 .car-banner {
-    background: url('https://via.placeholder.com/1200x400/24292f/FFFFFF/?text=Banner+Chevrolet') no-repeat center;
+    background: url('https://via.placeholder.com/1200x400/ffffff/d4af37/?text=Banner+Chevrolet') no-repeat center;
     background-size: cover;
-    color: white;
+    color: #333333;
     text-align: center;
-    padding: 80px 20px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 100px 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .car-banner h2 {
     font-size: 48px;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.car-banner p {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .car-banner .cta-btn {
-    background-color: #FFAA00;
+    background-color: #d4af37;
     color: white;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 25px;
     font-size: 18px;
-    margin-top: 20px;
-    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
 .car-banner .cta-btn:hover {
-    background-color: #e07b00;
+    background-color: #b38f2e;
 }
 
 .section-title {
     font-size: 32px;
     font-weight: bold;
     text-align: center;
-    margin: 20px 0;
+    margin: 40px 0;
+    color: #d4af37;
 }
 
 .car-list {
@@ -88,12 +100,13 @@ nav ul li a {
 }
 
 .car-item {
-    background-color: #333;
+    background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     width: 280px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    border: 1px solid #e0e0e0;
 }
 
 .car-item:hover {
@@ -107,8 +120,8 @@ nav ul li a {
 }
 
 .car-item h3 {
-    background-color: #444;
-    color: white;
+    background-color: #f9f9f9;
+    color: #333333;
     padding: 10px;
     font-size: 18px;
     text-align: center;
@@ -117,29 +130,31 @@ nav ul li a {
 .car-item p {
     padding: 10px;
     text-align: center;
-    color: #ccc;
+    color: #666666;
 }
 
 .car-item a {
     display: block;
-    background-color: #FFAA00;
+    background-color: #d4af37;
     color: white;
     text-decoration: none;
     padding: 10px;
     text-align: center;
     border-radius: 0 0 10px 10px;
+    transition: background-color 0.3s;
 }
 
 .car-item a:hover {
-    background-color: #e07b00;
+    background-color: #b38f2e;
 }
 
 footer {
-    background-color: #1e2328;
-    color: white;
+    background-color: #ffffff;
+    color: #333333;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
+    border-top: 2px solid #d4af37;
 }
 
 footer p {
@@ -155,13 +170,13 @@ footer p {
 }
 
 .social-links a {
-    color: white;
+    color: #333333;
     font-size: 24px;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #FFAA00;
+    color: #d4af37;
 }
 
 .whatsapp-btn {
@@ -173,7 +188,7 @@ footer p {
     font-size: 36px;
     padding: 18px;
     border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
